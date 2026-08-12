@@ -1,0 +1,1 @@
+# QOMedClase7
