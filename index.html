@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UPCH - Reacciones de Alquenos y Alquinos: Markovnikov, Transposiciones y Oxidación | Química Orgánica</title>
+<title>Reacciones de Alquenos y Alquinos: Markovnikov, Transposiciones y Oxidación | Química Orgánica</title>
 <style>
     :root {
-        --upch-gold: #D4AF37;
-        --upch-dark: #1a1a2e;
-        --upch-blue: #16213e;
-        --upch-light: #0f3460;
+        --QOMed-gold: #D4AF37;
+        --QOMed-dark: #1a1a2e;
+        --QOMed-blue: #16213e;
+        --QOMed-light: #0f3460;
         --accent: #e94560;
         --text: #2c3e50;
         --white: #ffffff;
@@ -27,38 +27,38 @@
     ul:not(.map-tree) li, ol li { margin: 0.45rem 0; }
 
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: var(--text); line-height: 1.6; overflow-x: hidden; }
-    header { background: linear-gradient(135deg, var(--upch-dark) 0%, var(--upch-blue) 100%); color: var(--white); padding: 2rem; text-align: center; box-shadow: 0 6px 20px var(--shadow); position: relative; overflow: hidden; border-bottom: 5px solid var(--upch-gold); }
+    header { background: linear-gradient(135deg, var(--QOMed-dark) 0%, var(--QOMed-blue) 100%); color: var(--white); padding: 2rem; text-align: center; box-shadow: 0 6px 20px var(--shadow); position: relative; overflow: hidden; border-bottom: 5px solid var(--QOMed-gold); }
     .logo-container { display: flex; align-items: center; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap; }
-    .logo-upch { width: 120px; height: auto; background: var(--white); border-radius: 50%; padding: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); color: var(--upch-gold); }
+    .logo-QOMed { width: 120px; height: auto; background: var(--white); border-radius: 50%; padding: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); color: var(--QOMed-gold); }
     .subtitle { font-size: 1.2rem; opacity: 0.95; font-weight: 300; }
-    .nav-container { background: var(--upch-blue); padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 12px var(--shadow); }
+    .nav-container { background: var(--QOMed-blue); padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 12px var(--shadow); }
     .nav-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.8rem; max-width: 1400px; margin: 0 auto; }
-    .nav-btn { background: var(--white); color: var(--upch-dark); border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 8px rgba(0,0,0,0.2); }
-    .nav-btn:hover, .nav-btn.active { background: var(--upch-gold); color: var(--upch-dark); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(212,175,55,0.4); }
+    .nav-btn { background: var(--white); color: var(--QOMed-dark); border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 3px 8px rgba(0,0,0,0.2); }
+    .nav-btn:hover, .nav-btn.active { background: var(--QOMed-gold); color: var(--QOMed-dark); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(212,175,55,0.4); }
     .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
     .section { display: none; animation: fadeIn 0.5s ease; }
     .section.active { display: block; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    .card { background: var(--white); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 8px 24px var(--shadow); border-left: 6px solid var(--upch-gold); transition: transform 0.3s ease; }
+    .card { background: var(--white); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 8px 24px var(--shadow); border-left: 6px solid var(--QOMed-gold); transition: transform 0.3s ease; }
     .card:hover { transform: translateY(-5px); }
-    h2 { color: var(--upch-blue); margin-bottom: 1.5rem; padding-bottom: 0.8rem; border-bottom: 3px solid var(--upch-gold); display: flex; align-items: center; gap: 0.8rem; font-size: 2rem; }
-    h3 { color: var(--upch-light); margin: 1.5rem 0 1rem; font-size: 1.5rem; }
+    h2 { color: var(--QOMed-blue); margin-bottom: 1.5rem; padding-bottom: 0.8rem; border-bottom: 3px solid var(--QOMed-gold); display: flex; align-items: center; gap: 0.8rem; font-size: 2rem; }
+    h3 { color: var(--QOMed-light); margin: 1.5rem 0 1rem; font-size: 1.5rem; }
     .molecule-img { max-width: 100%; height: auto; border-radius: 12px; margin: 1rem 0; box-shadow: 0 4px 12px var(--shadow); }
     .img-container { text-align: center; margin: 2rem 0; }
-    .calculator { background: linear-gradient(135deg, #fff9f5 0%, #fff0e8 100%); border: 3px solid var(--upch-gold); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
-    .calc-title { color: var(--upch-blue); font-size: 1.6rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem; }
+    .calculator { background: linear-gradient(135deg, #fff9f5 0%, #fff0e8 100%); border: 3px solid var(--QOMed-gold); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
+    .calc-title { color: var(--QOMed-blue); font-size: 1.6rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem; }
     .calc-input-group { margin: 1rem 0; }
-    .calc-input-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--upch-dark); }
+    .calc-input-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--QOMed-dark); }
     .calc-input-group input, .calc-input-group select { width: 100%; padding: 0.8rem; border: 2px solid var(--sand); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s; }
-    .calc-input-group input:focus, .calc-input-group select:focus { outline: none; border-color: var(--upch-gold); }
-    .calc-button { background: var(--upch-blue); color: var(--white); border: none; padding: 1rem 2rem; border-radius: 30px; font-size: 1.1rem; font-weight: 600; cursor: pointer; margin-top: 1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px var(--shadow); }
-    .calc-button:hover { background: var(--upch-gold); color: var(--upch-dark); transform: translateY(-2px); }
+    .calc-input-group input:focus, .calc-input-group select:focus { outline: none; border-color: var(--QOMed-gold); }
+    .calc-button { background: var(--QOMed-blue); color: var(--white); border: none; padding: 1rem 2rem; border-radius: 30px; font-size: 1.1rem; font-weight: 600; cursor: pointer; margin-top: 1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px var(--shadow); }
+    .calc-button:hover { background: var(--QOMed-gold); color: var(--QOMed-dark); transform: translateY(-2px); }
     .calc-result { background: var(--white); border-left: 5px solid var(--accent); padding: 1.5rem; margin-top: 1.5rem; border-radius: 8px; font-size: 1.1rem; display: none; }
     .calc-result.show { display: block; animation: slideIn 0.5s ease; }
     @keyframes slideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
     table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px var(--shadow); }
-    th { background: linear-gradient(135deg, var(--upch-blue) 0%, var(--upch-light) 100%); color: var(--white); padding: 1.2rem; text-align: left; font-weight: 600; }
+    th { background: linear-gradient(135deg, var(--QOMed-blue) 0%, var(--QOMed-light) 100%); color: var(--white); padding: 1.2rem; text-align: left; font-weight: 600; }
     td { padding: 1rem 1.2rem; border-bottom: 1px solid #eee; transition: background 0.3s; }
     tr:hover td { background: #f8fff0; }
     .info-box { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 5px solid #2196f3; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 12px 12px 0; }
@@ -66,50 +66,50 @@
     .bio-box { background: linear-gradient(135deg, #d1ecf1 0%, #a8dadc 100%); border-left: 5px solid #17a2b8; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 12px 12px 0; }
     .pharma-box { background: linear-gradient(135deg, #f8d7da 0%, #f1aeb5 100%); border-left: 5px solid #dc3545; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 12px 12px 0; }
     .problem-box { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 5px solid #28a745; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 12px 12px 0; }
-    details.solution { margin-top: 1rem; background: #f8f9fa; border: 2px solid var(--upch-light); border-radius: 10px; padding: 0.8rem 1.2rem; }
-    details.solution summary { cursor: pointer; font-weight: 700; color: var(--upch-light); }
-    details.solution[open] summary { margin-bottom: 0.8rem; border-bottom: 1px dashed var(--upch-light); padding-bottom: .4rem; }
+    details.solution { margin-top: 1rem; background: #f8f9fa; border: 2px solid var(--QOMed-light); border-radius: 10px; padding: 0.8rem 1.2rem; }
+    details.solution summary { cursor: pointer; font-weight: 700; color: var(--QOMed-light); }
+    details.solution[open] summary { margin-bottom: 0.8rem; border-bottom: 1px dashed var(--QOMed-light); padding-bottom: .4rem; }
     .mnemonic-card { background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%); border: 3px solid var(--accent); border-radius: 12px; padding: 1.5rem; margin: 1rem 0; position: relative; overflow: hidden; }
     .mnemonic-title { color: var(--accent); font-weight: 700; margin-bottom: 0.8rem; font-size: 1.2rem; }
-    .glossary-term { background: var(--white); border: 2px solid var(--upch-gold); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; cursor: pointer; transition: all 0.3s; }
+    .glossary-term { background: var(--white); border: 2px solid var(--QOMed-gold); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; cursor: pointer; transition: all 0.3s; }
     .glossary-term:hover { background: #fff9e6; transform: translateX(5px); }
-    .glossary-definition { display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--upch-gold); }
+    .glossary-definition { display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--QOMed-gold); }
     .glossary-definition.show { display: block; animation: fadeIn 0.3s ease; }
     .error-card { background: linear-gradient(135deg, #ffe6e6 0%, #ffb3b3 100%); border-left: 5px solid #dc3545; padding: 1.5rem; margin: 1rem 0; border-radius: 0 12px 12px 0; }
     .error-title { color: #dc3545; font-weight: 700; margin-bottom: 0.5rem; }
     .correction { background: #d4edda; border-left: 3px solid #28a745; padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
-    .quiz-container { background: linear-gradient(135deg, var(--upch-blue) 0%, var(--upch-light) 100%); color: var(--white); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
+    .quiz-container { background: linear-gradient(135deg, var(--QOMed-blue) 0%, var(--QOMed-light) 100%); color: var(--white); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
     .quiz-question { font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 600; }
     .quiz-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
     .quiz-option { background: var(--white); color: var(--text); border: 3px solid transparent; padding: 1.2rem; border-radius: 10px; cursor: pointer; transition: all 0.3s ease; font-weight: 500; }
-    .quiz-option:hover:not(:disabled) { border-color: var(--upch-gold); transform: translateY(-3px); }
+    .quiz-option:hover:not(:disabled) { border-color: var(--QOMed-gold); transform: translateY(-3px); }
     .quiz-option:disabled { cursor: not-allowed; opacity: 0.95; }
     .quiz-option.correct { background: #4caf50; color: white; border-color: #2e7d32; }
     .quiz-option.incorrect { background: #f44336; color: white; border-color: #c62828; }
     .quiz-progress { max-width: 720px; margin: 0 auto 1rem; }
     .quiz-progress-bar-bg { height: 10px; background: #e0e0e0; border-radius: 5px; overflow: hidden; }
-    .quiz-progress-bar { height: 100%; width: 0; background: linear-gradient(90deg, var(--upch-gold), var(--accent)); transition: width 0.4s; }
+    .quiz-progress-bar { height: 100%; width: 0; background: linear-gradient(90deg, var(--QOMed-gold), var(--accent)); transition: width 0.4s; }
     .quiz-stats { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin: 1rem 0; }
-    .quiz-stat { padding: 0.6rem 1.2rem; border-radius: 20px; font-weight: 700; color: #fff; font-size: 0.95rem; background: var(--upch-light); }
-    .footer { background: var(--upch-dark); color: var(--white); text-align: center; padding: 2.5rem; margin-top: 3rem; border-top: 5px solid var(--upch-gold); }
+    .quiz-stat { padding: 0.6rem 1.2rem; border-radius: 20px; font-weight: 700; color: #fff; font-size: 0.95rem; background: var(--QOMed-light); }
+    .footer { background: var(--QOMed-dark); color: var(--white); text-align: center; padding: 2.5rem; margin-top: 3rem; border-top: 5px solid var(--QOMed-gold); }
     .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; border-radius: 12px; box-shadow: 0 4px 12px var(--shadow); }
     .table-responsive table { min-width: 600px; width: 100%; margin: 0; }
     .tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
     .tab { background: var(--sand); border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s; }
-    .tab.active { background: var(--upch-gold); color: var(--upch-dark); }
+    .tab.active { background: var(--QOMed-gold); color: var(--QOMed-dark); }
     .tab-content { display: none; }
     .tab-content.active { display: block; animation: fadeIn 0.5s ease; }
     .fc-stats { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin: 1rem 0; }
     .fc-stat { padding: 0.6rem 1.2rem; border-radius: 20px; font-weight: 700; color: #fff; font-size: 0.95rem; }
-    .fc-stat.good { background: #28a745; } .fc-stat.bad { background: #dc3545; } .fc-stat.pending { background: #6c757d; } .fc-stat.total { background: var(--upch-light); }
+    .fc-stat.good { background: #28a745; } .fc-stat.bad { background: #dc3545; } .fc-stat.pending { background: #6c757d; } .fc-stat.total { background: var(--QOMed-light); }
     .fc-progress { height: 10px; background: #e0e0e0; border-radius: 5px; overflow: hidden; max-width: 720px; margin: 0 auto 1.5rem; }
-    .fc-progress-bar { height: 100%; width: 0; background: linear-gradient(90deg, var(--upch-gold), var(--accent)); transition: width 0.4s; }
+    .fc-progress-bar { height: 100%; width: 0; background: linear-gradient(90deg, var(--QOMed-gold), var(--accent)); transition: width 0.4s; }
     .flashcard-scene { perspective: 1400px; max-width: 720px; height: 320px; margin: 0 auto 1.5rem; }
     .flashcard { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 0.6s; cursor: pointer; }
     .flashcard.flipped { transform: rotateY(180deg); }
     .fc-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; overflow: auto; box-shadow: 0 8px 24px var(--shadow); font-size: 1.15rem; }
-    .fc-front { background: linear-gradient(135deg, var(--upch-blue), var(--upch-light)); color: #fff; border: 3px solid var(--upch-gold); }
-    .fc-back { background: linear-gradient(135deg, #fff9e6, var(--sand)); color: var(--text); border: 3px solid var(--upch-gold); transform: rotateY(180deg); }
+    .fc-front { background: linear-gradient(135deg, var(--QOMed-blue), var(--QOMed-light)); color: #fff; border: 3px solid var(--QOMed-gold); }
+    .fc-back { background: linear-gradient(135deg, #fff9e6, var(--sand)); color: var(--text); border: 3px solid var(--QOMed-gold); transform: rotateY(180deg); }
     .fc-label { font-size: 0.85rem; letter-spacing: 2px; font-weight: 800; opacity: 0.8; margin-bottom: 1rem; }
     .fc-hint { margin-top: 1rem; font-size: 0.85rem; opacity: 0.7; font-style: italic; }
     .fc-controls { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; }
@@ -122,26 +122,26 @@
     /* ===== MAPA CONCEPTUAL ===== */
     .map-container { overflow-x: auto; padding: 1rem 0; }
     .map-tree, .map-tree ul { list-style: none; margin: 0; padding-left: 0; }
-    .map-tree ul { display: none; padding-left: 1.6rem; margin: 0.6rem 0 0; border-left: 3px solid var(--upch-gold); }
+    .map-tree ul { display: none; padding-left: 1.6rem; margin: 0.6rem 0 0; border-left: 3px solid var(--QOMed-gold); }
     .map-tree li.open > ul { display: block; animation: fadeIn 0.4s ease; }
     .map-tree li { margin: 0.4rem 0; }
-    .map-node { display: inline-block; background: var(--upch-blue); color: #fff; padding: 0.6rem 1.1rem; border-radius: 10px; cursor: pointer; font-weight: 600; transition: all 0.3s; }
-    .map-node:hover { background: var(--upch-gold); color: var(--upch-dark); transform: translateX(4px); }
+    .map-node { display: inline-block; background: var(--QOMed-blue); color: #fff; padding: 0.6rem 1.1rem; border-radius: 10px; cursor: pointer; font-weight: 600; transition: all 0.3s; }
+    .map-node:hover { background: var(--QOMed-gold); color: var(--QOMed-dark); transform: translateX(4px); }
     .map-node.root { background: var(--accent); font-size: 1.15rem; }
-    .map-node.branch { background: var(--upch-light); }
-    .map-leaf { display: inline-block; background: var(--sand); color: var(--text); padding: 0.45rem 0.9rem; border-radius: 8px; font-size: 0.95rem; border: 2px solid var(--upch-gold); }
+    .map-node.branch { background: var(--QOMed-light); }
+    .map-leaf { display: inline-block; background: var(--sand); color: var(--text); padding: 0.45rem 0.9rem; border-radius: 8px; font-size: 0.95rem; border: 2px solid var(--QOMed-gold); }
     li.has-children > .map-node::before { content: '▶ '; font-size: 0.8em; }
     li.has-children.open > .map-node::before { content: '▼ '; font-size: 0.8em; }
 
     /* ===== BARRAS DE ESTABILIDAD ===== */
     .bar-wrap { display: flex; align-items: flex-end; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 1.5rem 0; }
     .bar-col { display: flex; flex-direction: column; align-items: center; }
-    .bar { width: 58px; background: linear-gradient(180deg, var(--upch-gold), var(--accent)); border-radius: 8px 8px 0 0; box-shadow: 0 3px 8px var(--shadow); }
-    .bar-label { text-align: center; font-size: 0.8rem; margin-top: 0.4rem; font-weight: 600; color: var(--upch-dark); }
+    .bar { width: 58px; background: linear-gradient(180deg, var(--QOMed-gold), var(--accent)); border-radius: 8px 8px 0 0; box-shadow: 0 3px 8px var(--shadow); }
+    .bar-label { text-align: center; font-size: 0.8rem; margin-top: 0.4rem; font-weight: 600; color: var(--QOMed-dark); }
 
     @media (max-width: 768px) {
         h1 { font-size: 1.8rem; } h2 { font-size: 1.5rem; } h3 { font-size: 1.2rem; }
-        .logo-container { flex-direction: column; gap: 1rem; } .logo-upch { width: 80px; }
+        .logo-container { flex-direction: column; gap: 1rem; } .logo-QOMed { width: 80px; }
         .container { padding: 1rem; } .card { padding: 1.5rem; }
         .nav-buttons { gap: 0.5rem; } .nav-btn { padding: 0.6rem 1rem; font-size: 0.85rem; }
         .quiz-options { grid-template-columns: 1fr; }
@@ -158,10 +158,10 @@
 <body>
 <header>
     <div class="logo-container">
-        <img src="logo-upch.png" alt="Logo UPCH" class="logo-upch">
-        <div>
-            <h1>Universidad Peruana Cayetano Heredia</h1>
-            <p class="subtitle">Facultad de Medicina • Química Orgánica</p>
+        <img src="Logo-QOMed.png" alt="Logo QOMed" class="logo-QOMed">
+            <div>
+                <h1>Química Orgánica</h1>
+                <p class="subtitle">Especializada para alumnos de Medicina</p>
             <p class="subtitle">Capítulo 7: Reacciones de Alquenos y Alquinos</p>
         </div>
     </div>
@@ -199,7 +199,7 @@
         </div>
         <h3>🩺 Importancia para la Medicina</h3>
         <div class="bio-box">
-            <div><strong>¿Por qué un futuro médico UPCH debe dominar alquenos y alquinos?</strong>
+            <div><strong>¿Por qué un futuro médico debe dominar alquenos y alquinos?</strong>
                 <ul style="font-size: 1rem; margin-top: 1rem;">
                     <li>• La <strong>hidrogenación industrial</strong> de aceites vegetales (cat. metálicos) genera <strong>grasas trans</strong>, factor de riesgo cardiovascular: es la misma <strong>hidrogenación catalítica</strong> de C=C que estudia este capítulo.</li>
                     <li>• La <strong>peroxidación lipídica</strong> ataca los C=C de los ácidos grasos insaturados de membranas; los oxidantes fuertes producen <strong>ruptura oxidativa</strong> análoga a la de KMnO₄ caliente.</li>
@@ -704,8 +704,6 @@
         <h3>Artículos y Recursos en Línea</h3>
         <div class="info-box"><strong>6. PubChem (pubchem.ncbi.nlm.nih.gov):</strong> propiedades y reactividad de propeno, propino, haluros vecinales/geminales y glicoles del capítulo.</div>
         <div class="tip-box"><strong>7. MolView (molview.org):</strong> visualiza el ion halonio cíclico, el carbocatión plano y la geometría de la adición anti/syn.</div>
-        <h3>Recursos UPCH</h3>
-        <div class="bio-box"><div><strong>8. Material de clase — Facultad de Medicina UPCH</strong><br>• Capítulo 07 (UFBI Química Orgánica): Reacciones de Alquenos y Alquinos<br>• Guías de práctica y banco de preguntas de exámenes</div></div>
     </div>
 </section>
 
@@ -737,290 +735,307 @@
 </footer>
 
 <script>
-// ================= NAVEGACIÓN =================
-function showSection(sectionId, btn) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.getElementById(sectionId).classList.add('active');
-    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
-    if (sectionId === 'quiz') startNewCycle(); // 🎲 nuevo sorteo CADA vez que se entra al Quiz
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-function showTab(groupId, tabId, btn) {
-    const g = document.getElementById(groupId);
-    g.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-    g.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.getElementById(tabId).classList.add('active');
-    if (btn) btn.classList.add('active');
-}
-function toggleMap(node){ node.parentElement.classList.toggle('open'); }
-function toggleDefinition(el){
-    const d = el.querySelector('.glossary-definition');
-    d.classList.toggle('show');
-    el.style.background = d.classList.contains('show') ? '#fff9e6' : 'var(--white)';
-}
-
-// ================= FLASHCARDS =================
-const flashcards = [
- { q:'¿Por qué la reacción característica de los alquenos es la adición electrofílica?', a:'Porque la nube π del C=C es rica en electrones y los cede a un atacante electrófilo.' },
- { q:'Etapa 1 del mecanismo HBr + alqueno:', a:'Protonación del doble enlace formando el carbocatión (paso determinante).' },
- { q:'Etapa 2 del mecanismo HBr + alqueno:', a:'Ataque nucleofílico del ion bromuro al carbocatión.' },
- { q:'Regla de Markovnikov:', a:'El H se enlaza al carbono menos sustituido (con más H); el electrófilo genera el carbocatión más estable.' },
- { q:'Propeno + HBr →', a:'2-bromopropano (catión secundario más estable).' },
- { q:'2-metilpropeno + HBr →', a:'Solo 2-bromo-2-metilpropano: pasa por el carbocatión terciario.' },
- { q:'HBr + peróxidos (Kharasch) sobre propeno →', a:'1-bromopropano: adición anti-Markovnikov radicalaria; exclusiva de HBr.' },
- { q:'1-buteno + HCl da (±)-2-clorobutano porque:', a:'El carbocatión plano trigonal (aquiral) es atacado por ambas caras: mezcla racémica.' },
- { q:'Salto de hidruro 1,2:', a:'Un H migra con su par de electrones entre carbonos adyacentes hacia el C+.' },
- { q:'Salto de alquilo 1,2:', a:'Un grupo alquilo migra con su par hacia el C+; el catión queda más estable.' },
- { q:'Fuerza motriz de la transposición:', a:'Formar el carbocatión más estable (1° → 2° → 3°); evidencia del mecanismo iónico.' },
- { q:'3-metil-1-buteno + HBr →', a:'2-bromo-2-metilbutano: hidruro 1,2 convierte el catión 2° en 3°.' },
- { q:'Hidratación (H2O/H+):', a:'Alcohol Markovnikov; reversible, opuesta a la deshidratación de alcoholes.' },
- { q:'1-metilciclopenteno + ácido diluido →', a:'1-metilciclopentanol (OH en el carbono más sustituido, catión 3°).' },
- { q:'2-fenilpropeno + ácido diluido →', a:'2-fenil-2-propanol (catión terciario y bencílico, muy estable).' },
- { q:'Adición de Cl2/Br2 a alquenos:', a:'Vía ion halonio cíclico; apertura anti → dihaluro vecinal.' },
- { q:'Halógenos con utilidad práctica en adición:', a:'Cl2 y Br2 (F2 violento; los diioduros pierden I2 y regeneran el alqueno).' },
- { q:'Etileno + Br2 en agua →', a:'2-bromoetanol (halohidrina); ciclopenteno + Cl2/H2O → 2-clorociclopentanol.' },
- { q:'Hidrogenación catalítica:', a:'H2 con Pt (o Pd, Ni, Rh) da el alcano; reacción heterogénea; sin catalizador no ocurre.' },
- { q:'2-metil-2-buteno + H2/Pt →', a:'2-metilbutano.' },
- { q:'Test de Baeyer (KMnO4 diluido, frío):', a:'Hidroxilación a glicol (1,2-diol); el violeta se decolora: test de insaturación.' },
- { q:'KMnO4 caliente o en medio ácido sobre alquenos:', a:'Ruptura oxidativa: =CR2 → cetona; =CH– → aldehído → ácido; =CH2 → CO2.' },
- { q:'3,7-dimetil-1-octeno + KMnO4/H+ →', a:'Ácido 2,6-dimetilheptanoico (+ CO2 del =CH2 terminal).' },
- { q:'Alquino + 2 HX →', a:'Doble adición Markovnikov: dihaluro GEMINAL (ej. propino → 2,2-dibromopropano).' },
- { q:'Alquino + H2O/H+ →', a:'Enol (alcohol vinílico) inestable que tautomeriza a CETONA (propino → acetona).' },
- { q:'Oxidación de alquinos:', a:'KMnO4/H+: ruptura del triple enlace → 2 ácidos carboxílicos; oxidación suave → dicetonas.' },
- { q:'Estabilidad de carbocationes:', a:'Bencilo > alilo > 3° > 2° > 1° > metilo.' }
-];
-let fcIndex=0, fcFlipped=false, fcGood=0, fcBad=0, fcDone=false;
-function fcUpdateStats(){
-    document.getElementById('fc-good').textContent=fcGood;
-    document.getElementById('fc-bad').textContent=fcBad;
-    document.getElementById('fc-left').textContent=Math.max(0,flashcards.length-fcIndex);
-    const tg=parseInt(localStorage.getItem('fc7TotalGood')||'0',10), tb=parseInt(localStorage.getItem('fc7TotalBad')||'0',10);
-    document.getElementById('fc-hist').textContent=tg+' ✓ / '+tb+' ✗';
-    document.getElementById('fc-bar').style.width=(fcIndex/flashcards.length*100)+'%';
-}
-function fcRenderCard(){
-    document.getElementById('fc-card').classList.remove('flipped'); fcFlipped=false;
-    document.getElementById('fc-question').textContent=flashcards[fcIndex].q;
-    document.getElementById('fc-answer').textContent=flashcards[fcIndex].a;
-    document.getElementById('btn-fc-good').disabled=true; document.getElementById('btn-fc-bad').disabled=true;
-    fcUpdateStats();
-}
-function flipCard(){
-    if(fcDone) return;
-    const c=document.getElementById('fc-card'); c.classList.toggle('flipped');
-    fcFlipped=c.classList.contains('flipped');
-    document.getElementById('btn-fc-good').disabled=!fcFlipped;
-    document.getElementById('btn-fc-bad').disabled=!fcFlipped;
-}
-function gradeCard(ok){
-    if(!fcFlipped||fcDone) return;
-    if(ok){ fcGood++; localStorage.setItem('fc7TotalGood',String(parseInt(localStorage.getItem('fc7TotalGood')||'0',10)+1)); }
-    else { fcBad++; localStorage.setItem('fc7TotalBad',String(parseInt(localStorage.getItem('fc7TotalBad')||'0',10)+1)); }
-    fcIndex++;
-    if(fcIndex<flashcards.length) { fcRenderCard(); } else { fcFinish(); }
-}
-function fcFinish(){
-    fcDone=true;
-    document.getElementById('fc-scene').style.display='none';
-    document.getElementById('fc-controls').style.display='none';
-    const pct=Math.round(fcGood/(fcGood+fcBad)*100);
-    const msg=pct>=80?'🏆 ¡Excelente! Dominas el capítulo 7.':(pct>=60?'💪 ¡Bien! Repasa las que fallaste.':'📚 Repasa Conceptos, Mapa y Errores Comunes.');
-    const s=document.getElementById('fc-summary');
-    s.innerHTML='<strong>📊 Resumen:</strong> ✅ '+fcGood+' • ❌ '+fcBad+' • Precisión <strong>'+pct+'%</strong><br>'+msg;
-    s.classList.add('show'); fcUpdateStats();
-}
-function resetFlashcards(){
-    fcIndex=0; fcGood=0; fcBad=0; fcDone=false;
-    document.getElementById('fc-scene').style.display='block';
-    document.getElementById('fc-controls').style.display='flex';
-    document.getElementById('fc-summary').classList.remove('show');
-    fcRenderCard();
-}
-function borrarHistorial(){ localStorage.removeItem('fc7TotalGood'); localStorage.removeItem('fc7TotalBad'); fcUpdateStats(); }
-
-// ================= HERRAMIENTAS =================
-const reaccionesData = [
- { r:'Propeno + Br₂ → 1,2-dibromopropano', t:'HALOGENACIÓN (ADICIÓN ANTI)', x:'Ion halonio cíclico que se abre por el haluro: dihaluro vecinal con estereoquímica anti.' },
- { r:'Propeno + HBr → 2-bromopropano', t:'ADICIÓN ELECTROFÍLICA MARKOVNIKOV', x:'El H va al carbono con más H; pasa por el carbocatión secundario más estable.' },
- { r:'Propeno + HBr (peróxidos) → 1-bromopropano', t:'ADICIÓN ANTI-MARKOVNIKOV (KHARASCH)', x:'Mecanismo radicalario con peróxidos; exclusivo de HBr.' },
- { r:'Propeno + H₂O/H⁺ → 2-propanol', t:'HIDRATACIÓN MARKOVNIKOV', x:'OH al carbono más sustituido; reacción reversible frente a la deshidratación.' },
- { r:'Etileno + Br₂/H₂O → 2-bromoetanol', t:'FORMACIÓN DE HALOHIDRINA', x:'Con agua como nucleófilo entran Br y OH en carbonos vecinos (anti).' },
- { r:'2-metil-2-buteno + H₂/Pt → 2-metilbutano', t:'HIDROGENACIÓN CATALÍTICA', x:'Reacción heterogénea en la interfase con Pt (o Pd, Ni, Rh); sin catalizador no ocurre.' },
- { r:'Ciclohexeno + KMnO₄ frío/diluido → cis-1,2-diol', t:'HIDROXILACIÓN (TEST DE BAEYER)', x:'Permanganato diluido en frío: glicol; se decolora (prueba de insaturación).' },
- { r:'3,7-dimetil-1-octeno + KMnO₄/H⁺ → ácido 2,6-dimetilheptanoico', t:'RUPTURA OXIDATIVA', x:'Medio ácido/caliente rompe el C=C: =CH– → ácido; =CH₂ → CO₂.' },
- { r:'Propino + 2 HBr → 2,2-dibromopropano', t:'DOBLE ADICIÓN MARKOVNIKOV (GEMINAL)', x:'Ambas adiciones siguen la misma pauta: los dos Br en el mismo carbono.' },
- { r:'Propino + H₂O/H⁺ → acetona', t:'HIDRATACIÓN DE ALQUINO + TAUTOMERÍA', x:'El enol (alcohol vinílico) es inestable y tautomeriza a cetona.' },
- { r:'2-butino + KMnO₄ suave → 2,3-butanodiona', t:'OXIDACIÓN SUAVE DE ALQUINO', x:'Permanganato suave: dicetona sin romper el esqueleto.' },
- { r:'3-metil-1-buteno + HBr → 2-bromo-2-metilbutano', t:'ADICIÓN CON TRANSPOSICIÓN', x:'Salto de hidruro 1,2: catión 2° → catión 3° más estable antes del ataque de Br⁻.' }
-];
-function clasificarReaccion(){
-    const d=reaccionesData[parseInt(document.getElementById('reaccion-select').value,10)];
-    const r=document.getElementById('reaccion-resultado');
-    r.innerHTML='<strong>'+d.r+'</strong><br>Tipo de reacción: <span style="color:#e94560;font-weight:bold;">'+d.t+'</span><br>💡 '+d.x;
-    r.classList.add('show');
-}
-const markovData = [
- { m:'Propeno + HBr', p:'2-bromopropano', x:'Markovnikov: H al CH₂ terminal; catión secundario más estable que el primario.' },
- { m:'Propeno + HBr (peróxidos)', p:'1-bromopropano', x:'Kharasch: con peróxidos, solo HBr da adición anti-Markovnikov (radicalaria).' },
- { m:'2-metilpropeno + HCl', p:'2-cloro-2-metilpropano', x:'Catión terciario: el Cl queda en el carbono más sustituido.' },
- { m:'2-metilpropeno + H₂O/H⁺', p:'2-metil-2-propanol', x:'Hidratación Markovnikov: OH en el carbono terciario.' },
- { m:'1-metilciclopenteno + H₂O/H⁺', p:'1-metilciclopentanol', x:'El OH queda en el carbono del doble enlace más sustituido (catión 3°).' },
- { m:'2-fenilpropeno + H₂O/H⁺', p:'2-fenil-2-propanol', x:'Catión terciario y bencílico (resonancia con el anillo): muy estable.' },
- { m:'1-fenilciclohexeno + H₂O/H⁺', p:'1-fenilciclohexanol', x:'Protonación que deja el + en el carbono bencílico/terciario del anillo.' },
- { m:'3-metil-1-buteno + HBr', p:'2-bromo-2-metilbutano', x:'Catión 2° inicial → salto de hidruro 1,2 → catión 3°: producto con transposición.' },
- { m:'1-buteno + HCl', p:'(±)-2-clorobutano (racémico)', x:'Markovnikov da 2-clorobutano; el catión plano es atacado por ambas caras: mezcla R y S.' }
-];
-function predecirMarkovnikov(){
-    const d=markovData[parseInt(document.getElementById('markov-select').value,10)];
-    const r=document.getElementById('markov-resultado');
-    r.innerHTML='<strong>'+d.m+'</strong><br>Producto principal: <span style="color:#e94560;font-weight:bold;">'+d.p+'</span><br>💡 '+d.x;
-    r.classList.add('show');
-}
-const oxidData = [
- { m:'Propeno + KMnO₄ diluido y frío', p:'1,2-propanodiol (glicol)', x:'Test de Baeyer: hidroxilación sin ruptura; el violeta se decolora.' },
- { m:'Propeno + KMnO₄/H⁺ caliente', p:'Ácido acético + CO₂', x:'Ruptura: =CH– → aldehído → ácido; =CH₂ terminal → CO₂.' },
- { m:'2-metil-2-buteno + KMnO₄/H⁺', p:'Acetona + ácido acético', x:'=CR₂ → cetona (estable); =CH– → ácido carboxílico.' },
- { m:'3,7-dimetil-1-octeno + KMnO₄/H⁺', p:'Ácido 2,6-dimetilheptanoico (+ CO₂)', x:'Ejemplo del capítulo: ruptura oxidativa del C=C terminal.' },
- { m:'Ciclohexeno + KMnO₄ diluido y frío', p:'cis-1,2-ciclohexanodiol', x:'Hidroxilación syn a glicol (Baeyer positivo).' },
- { m:'2-butino + KMnO₄ suave', p:'2,3-butanodiona (dicetona)', x:'Oxidación suave del alquino: dicetona sin ruptura.' },
- { m:'2-butino + KMnO₄/H⁺', p:'2 CH₃COOH (dos ácidos)', x:'Ruptura del triple enlace en medio ácido: dos ácidos carboxílicos.' }
-];
-function analizarOxidacion(){
-    const d=oxidData[parseInt(document.getElementById('oxid-select').value,10)];
-    const r=document.getElementById('oxid-resultado');
-    r.innerHTML='<strong>'+d.m+'</strong><br>Producto(s): <span style="color:#e94560;font-weight:bold;">'+d.p+'</span><br>💡 '+d.x;
-    r.classList.add('show');
-}
-function renderBarras7(tipo){
-    const datos = tipo==='radicales'
-      ? [['Metilo (105)',1],['1° (98)',2],['2° (95)',3],['3° (92)',4],['Alilo',5],['Bencilo',6]]
-      : [['Metilo',1],['1°',2],['2°',3],['3°',4],['Alilo',5],['Bencilo',6]];
-    const cont=document.getElementById('est-barras');
-    const min=1, max=6;
-    let html='';
-    datos.forEach(function(d){
-        const h=Math.round((d[1]-min)/(max-min)*150)+18;
-        html+='<div class="bar-col"><div class="bar" style="height:'+h+'px;" title="'+d[0]+'"></div><div class="bar-label">'+d[0]+'</div></div>';
-    });
-    cont.innerHTML=html;
-    const m=document.getElementById('est-msg');
-    m.innerHTML = tipo==='radicales'
-      ? '📈 Barra más alta = <strong>radical más estable</strong> (Kharasch se apoya en esta escala). Números: energías de disociación C–H en kcal/mol.'
-      : '📈 Barra más alta = <strong>carbocatión más estable</strong>: bencilo &gt; alilo &gt; 3° &gt; 2° &gt; 1° &gt; metilo. Markovnikov y las transposiciones siguen esta escala.';
-    m.classList.add('show');
-}
-
-// ================= QUIZ (base 30, muestra 10 al azar) =================
-const quizBank = [
- { question:'La nube π del doble enlace C=C es rica en electrones; por ello, la reacción más importante de los alquenos es:', options:['Sustitución nucleófila','Adición electrófila','Eliminación','Ruptura homolítica'], correct:1, explanation:'La nube π cede electrones a un atacante electrófilo: adición electrófila.' },
- { question:'En el mecanismo de adición de HBr a un alqueno, la Etapa 1 es:', options:['Ataque del bromuro al carbocatión','Formación de un ion halonio','Protonación del doble enlace formando un carbocatión','Ruptura homolítica del H–Br'], correct:2, explanation:'Etapa 1: protonación del doble enlace → carbocatión; Etapa 2: ataque del Br⁻.' },
- { question:'La regla de Markovnikov establece que el protón se enlaza al carbono:', options:['Menos sustituido del doble enlace (con más H)','Más sustituido del doble enlace','Que genera el carbocatión menos estable','Con menor densidad electrónica'], correct:0, explanation:'El H va al carbono menos sustituido; el electrófilo genera el carbocatión más estable.' },
- { question:'Propeno + HBr da mayoritariamente:', options:['1-bromopropano','1,2-dibromopropano','Propano','2-bromopropano'], correct:3, explanation:'Pasa por el carbocatión secundario, más estable que el primario.' },
- { question:'2-metilpropeno + HBr da únicamente 2-bromo-2-metilpropano porque:', options:['Se favorece el carbocatión secundario','Se favorece el carbocatión terciario, más estable','Interviene un mecanismo radicalario','La reacción es anti-Markovnikov'], correct:1, explanation:'El catión terciario es más estable: solo se observa ese producto.' },
- { question:'Con peróxidos, HBr + propeno da:', options:['1-bromopropano (anti-Markovnikov)','2-bromopropano','Propano','1,2-dibromopropano'], correct:0, explanation:'Reacción de Kharasch: mecanismo radicalario, orientación anti-Markovnikov.' },
- { question:'La adición anti-Markovnikov (Kharasch) se observa con:', options:['HCl y peróxidos','H2O y peróxidos','HBr y peróxidos','HI y peróxidos'], correct:2, explanation:'Es exclusiva de HBr; con HCl o HI no ocurre.' },
- { question:'1-buteno + HCl da (±)-2-clorobutano (racémico) porque:', options:['El Cl ataca solo una cara del catión','El carbocatión plano trigonal es atacado por ambas caras','Se forma un ion cloronio cíclico','La reacción pasa por radicales'], correct:1, explanation:'El catión es aquiral y plano: ataque por ambas caras → mezcla R y S.' },
- { question:'Un salto de hidruro (1,2) consiste en:', options:['Un H que salta como H+ sin electrones','Pérdida de H2 molecular','Un H que salta con su par de electrones entre carbonos adyacentes','Un H que salta sin electrones'], correct:2, explanation:'El hidruro (:H⁻) migra con su par desde el carbono vecino al C+.' },
- { question:'La fuerza motriz de las transposiciones de carbocationes es:', options:['Formar el carbocatión más estable','Evitar el ataque del nucleófilo','Formar el carbocatión menos estable','Generar un radical libre'], correct:0, explanation:'El catión se reordena para quedar más estable (1° → 2° → 3°).' },
- { question:'3-metil-1-buteno + HBr da principalmente 2-bromo-2-metilbutano debido a:', options:['Una adición anti-Markovnikov','Un ion halonio cíclico','Una eliminación previa','Una migración 1,2 de hidruro (catión 2° → 3°)'], correct:3, explanation:'El catión secundario inicial se transpone al terciario antes del ataque de Br⁻.' },
- { question:'La hidratación de alquenos (H2O/H+):', options:['Da el alcohol anti-Markovnikov','Da un diol vecinal','Da el alcohol Markovnikov y es reversible (opuesta a la deshidratación)','Da siempre un éter'], correct:2, explanation:'OH al carbono más sustituido; el sentido depende de la cantidad de agua.' },
- { question:'1-metilciclopenteno + ácido diluido da:', options:['2-metilciclopentanol','1-metilciclopentanol','Ciclopentanol','Óxido de 1-metilciclopenteno'], correct:1, explanation:'El OH queda en el carbono más sustituido (catión terciario).' },
- { question:'2-fenilpropeno + ácido diluido da 2-fenil-2-propanol porque el catión intermedio es:', options:['Primario','Vinílico','Metilo','Bencílico y terciario, muy estable'], correct:3, explanation:'Resonancia con el anillo + sustitución: catión muy estable.' },
- { question:'La adición de Cl2 o Br2 a un alqueno pasa por:', options:['Un ion halonio cíclico que se abre con estereoquímica anti','Un carbocatión libre que rota','Un radical alquílico','Un carbanión'], correct:0, explanation:'El halonio cíclico impone apertura anti: dihaluro vecinal.' },
- { question:'Un dihaluro vecinal tiene:', options:['Dos halógenos en el mismo carbono','Halógenos separados por tres carbonos','Dos halógenos en carbonos adyacentes','Un halógeno y un OH vecinos'], correct:2, explanation:'Vecinal = carbonos adyacentes; geminal = mismo carbono.' },
- { question:'La adición de halógenos tiene utilidad práctica con:', options:['F2 y I2','Cl2 y Br2','I2 solamente','F2 solamente'], correct:1, explanation:'F2 es violento e incontrolable; los diioduros vecinales pierden I2.' },
- { question:'Etileno + Br2 en agua da:', options:['1,2-dibromoetano únicamente','Etanol','2-bromoetanol (halohidrina)','Ácido acético'], correct:2, explanation:'Con agua como nucleófilo se forma la halohidrina (X y OH anti).' },
- { question:'La hidrogenación catalítica de alquenos requiere:', options:['Luz ultravioleta','Peróxidos','KMnO4','Pt, Pd, Ni o Rh finamente divididos'], correct:3, explanation:'Sin catalizador no reaccionan ni a 200 °C; reacción heterogénea.' },
- { question:'2-metil-2-buteno + H2 (Pt) da:', options:['2-metilbutano','2-metil-2-butanol','Pentano','2-metil-1-buteno'], correct:0, explanation:'Hidrogenación: el alcano correspondiente, alto rendimiento.' },
- { question:'El test de Baeyer (KMnO4 diluido y frío) convierte al alqueno en:', options:['Dos ácidos carboxílicos','Un glicol (1,2-diol)','Una cetona','Un dihaluro'], correct:1, explanation:'Hidroxilación a diol; el permanganato se decolora (test de insaturación).' },
- { question:'Con KMnO4 caliente o en medio ácido, el alqueno sufre:', options:['Hidroxilación a glicol','Hidrogenación','Ruptura oxidativa dando cetonas y aldehídos/ácidos','Halogenación'], correct:2, explanation:'=CR2 → cetona; =CH– → aldehído → ácido; =CH2 → CO2.' },
- { question:'3,7-dimetil-1-octeno con KMnO4/H+ da:', options:['2,6-dimetilheptan-1-ol','Ácido octanoico','Acetona','Ácido 2,6-dimetilheptanoico (+ CO2)'], correct:3, explanation:'Ruptura oxidativa: el =CH2 terminal se pierde como CO2.' },
- { question:'Alquino + 2 HX da:', options:['Dihaluro vecinal','Alqueno halogenado','Dihaluro geminal (doble adición Markovnikov)','Dicetona'], correct:2, explanation:'Ambas adiciones siguen Markovnikov: los dos X en el mismo carbono.' },
- { question:'En un dihaluro geminal los dos halógenos están:', options:['En carbonos adyacentes','En los extremos de la cadena','Uno en sp2 y otro en sp3','En el mismo carbono'], correct:3, explanation:'Geminal = mismo carbono (ej. 2,2-dibromopropano).' },
- { question:'Alquino + H2O (H+) forma un enol que:', options:['Se tautomeriza a cetona','Se aísla como producto final','Se oxida a ácido','Vuelve al alquino'], correct:0, explanation:'El enol es inestable: tautomería ceto-enólica, la cetona es el producto.' },
- { question:'La oxidación de alquinos con KMnO4 en medio ácido da:', options:['Un glicol','Dos ácidos carboxílicos (ruptura del triple enlace)','Una dicetona siempre','Un enol'], correct:1, explanation:'El triple enlace se rompe: dos ácidos carboxílicos.' },
- { question:'La oxidación SUAVE de un alquino con permanganato da:', options:['Dicetonas','Dos ácidos carboxílicos','CO2 y agua','Un diol vecinal'], correct:0, explanation:'Suave = sin ruptura: dicetona.' },
- { question:'El orden de estabilidad de carbocationes es:', options:['Metilo > 1° > 2° > 3° > alilo > bencilo','3° > bencilo > alilo > 2° > 1°','Bencilo > alilo > 3° > 2° > 1° > metilo','2° > 3° > 1° > metilo'], correct:2, explanation:'Resonancia (bencilo/alilo) y efecto inductivo dador de los alquilos.' },
- { question:'Los diioduros vecinales tienden a:', options:['Ser muy estables','Perder I2 y regenerar el alqueno','Polimerizar espontáneamente','Convertirse en gem-diioduros'], correct:1, explanation:'Por eso la adición de I2 no tiene utilidad práctica.' }
-];
-let quizSet=[], qIdx=0, qScore=0, qAnswered=false, cycleDone=false, quizLastSet=[];
-
-function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); const t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
-function overlapCount(sel, old){ const s=new Set(old.map(q=>q.question)); return sel.filter(q=>s.has(q.question)).length; }
-
-function startNewCycle(){
-    let sel, tries=0;
-    do { sel=shuffle(quizBank.slice()).slice(0,10); tries++; }
-    while (quizLastSet.length && overlapCount(sel, quizLastSet) > 4 && tries < 30); // garantiza ≥6 preguntas nuevas
-    quizLastSet=sel;
-    quizSet=sel;
-    qIdx=0; qScore=0; qAnswered=false; cycleDone=false;
-    document.getElementById('quiz-result').style.display='none';
-    document.getElementById('quiz-result').classList.remove('show');
-    renderQuestion(); updateQuizHistory();
-}
-function renderQuestion(){
-    const q=quizSet[qIdx];
-    document.getElementById('q-progress-text').textContent='Pregunta '+(qIdx+1)+' de 10 • Aciertos: '+qScore;
-    document.getElementById('q-bar').style.width=(qIdx/10*100)+'%';
-    let html='<div class="quiz-container"><div class="quiz-question">'+(qIdx+1)+'. '+q.question+'</div><div class="quiz-options">';
-    q.options.forEach(function(o,i){ html+='<button class="quiz-option" onclick="checkQuiz('+i+', this)">'+o+'</button>'; });
-    html+='</div><div id="quiz-feedback" style="display:none;margin-top:1rem;padding:1rem;border-radius:8px;color:#2c3e50;"></div>';
-    html+='<div style="text-align:center;margin-top:1.2rem;"><button id="btn-next" class="calc-button" style="display:none;" onclick="nextQuestion()">'+(qIdx===9?'📊 Ver resultados':'➡️ Siguiente pregunta')+'</button></div></div>';
-    document.getElementById('quiz-container').innerHTML=html;
-    qAnswered=false;
-}
-function checkQuiz(i,btn){
-    if(qAnswered) return; qAnswered=true;
-    const q=quizSet[qIdx];
-    const opts=btn.parentElement.querySelectorAll('.quiz-option');
-    opts.forEach(function(o){ o.disabled=true; });
-    const fb=document.getElementById('quiz-feedback');
-    if(i===q.correct){ btn.classList.add('correct'); qScore++;
-        fb.innerHTML='<span style="color:#2e7d32;font-weight:bold;">✅ ¡Correcto!</span><br>'+q.explanation;
-        fb.style.background='#e8f5e9';
-    } else { btn.classList.add('incorrect'); opts[q.correct].classList.add('correct');
-        fb.innerHTML='<span style="color:#c62828;font-weight:bold;">❌ Incorrecto.</span><br>'+q.explanation;
-        fb.style.background='#ffebee';
+    // ================= NAVEGACIÓN =================
+    function showSection(sectionId, btn) {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+        if (sectionId === 'quiz') startNewCycle(); // 🎲 nuevo sorteo CADA vez que se entra al Quiz
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    fb.style.display='block';
-    document.getElementById('q-progress-text').textContent='Pregunta '+(qIdx+1)+' de 10 • Aciertos: '+qScore;
-    document.getElementById('btn-next').style.display='inline-block';
-}
-function nextQuestion(){ if(qIdx<9){ qIdx++; renderQuestion(); } else { finishCycle(); } }
-function finishCycle(){
-    cycleDone=true;
-    document.getElementById('q-bar').style.width='100%';
-    document.getElementById('quiz-container').innerHTML='';
-    const pct=Math.round(qScore*10);
-    let cycles=parseInt(localStorage.getItem('q7_cycles')||'0',10)+1;
-    const best=Math.max(parseInt(localStorage.getItem('q7_best')||'0',10),pct);
-    const totC=parseInt(localStorage.getItem('q7_totC')||'0',10)+qScore;
-    const totQ=parseInt(localStorage.getItem('q7_totQ')||'0',10)+10;
-    localStorage.setItem('q7_cycles',String(cycles)); localStorage.setItem('q7_best',String(best));
-    localStorage.setItem('q7_totC',String(totC)); localStorage.setItem('q7_totQ',String(totQ));
-    const msg=pct>=80?'🏆 ¡Excelente! Dominas el Capítulo 7.':(pct>=60?'💪 ¡Bien! Repasa los temas fallados en Conceptos y Errores Comunes.':'📚 Necesitas repasar: usa Mapa, Flashcards y Aplicaciones antes del próximo ciclo.');
-    const r=document.getElementById('quiz-result');
-    r.innerHTML='<strong>📊 Resultados del ciclo:</strong> '+qScore+'/10 correctas • <strong style="color:#e94560;">'+pct+'%</strong><br>'+msg+'<br><br>🔄 Pulsa “Reiniciar Quiz” o vuelve a entrar al Quiz para un <strong>nuevo ciclo con preguntas aleatorias</strong>.';
-    r.style.display='block'; r.classList.add('show');
-    document.getElementById('q-progress-text').textContent='Ciclo completado • Aciertos: '+qScore+'/10';
-    updateQuizHistory();
-}
-function updateQuizHistory(){
-    const cycles=parseInt(localStorage.getItem('q7_cycles')||'0',10);
-    const best=parseInt(localStorage.getItem('q7_best')||'0',10);
-    const totC=parseInt(localStorage.getItem('q7_totC')||'0',10);
-    const totQ=parseInt(localStorage.getItem('q7_totQ')||'0',10);
-    document.getElementById('q-history').innerHTML='📈 Ciclos: <strong>'+cycles+'</strong> | Mejor: <strong>'+best+'%</strong> | Promedio histórico: <strong>'+(totQ?Math.round(totC/totQ*100):0)+'%</strong>';
-}
+    function showTab(groupId, tabId, btn) {
+        const g = document.getElementById(groupId);
+        g.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        g.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        if (btn) btn.classList.add('active');
+    }
+    function toggleMap(node){ node.parentElement.classList.toggle('open'); }
+    function toggleDefinition(el){
+        const d = el.querySelector('.glossary-definition');
+        d.classList.toggle('show');
+        el.style.background = d.classList.contains('show') ? '#fff9e6' : 'var(--white)';
+    }
+    
+    // ================= FLASHCARDS =================
+    const flashcards = [
+     { q:'¿Por qué la reacción característica de los alquenos es la adición electrofílica?', a:'Porque la nube π del C=C es rica en electrones y los cede a un atacante electrófilo.' },
+     { q:'Etapa 1 del mecanismo HBr + alqueno:', a:'Protonación del doble enlace formando el carbocatión (paso determinante).' },
+     { q:'Etapa 2 del mecanismo HBr + alqueno:', a:'Ataque nucleofílico del ion bromuro al carbocatión.' },
+     { q:'Regla de Markovnikov:', a:'El H se enlaza al carbono menos sustituido (con más H); el electrófilo genera el carbocatión más estable.' },
+     { q:'Propeno + HBr →', a:'2-bromopropano (catión secundario más estable).' },
+     { q:'2-metilpropeno + HBr →', a:'Solo 2-bromo-2-metilpropano: pasa por el carbocatión terciario.' },
+     { q:'HBr + peróxidos (Kharasch) sobre propeno →', a:'1-bromopropano: adición anti-Markovnikov radicalaria; exclusiva de HBr.' },
+     { q:'1-buteno + HCl da (±)-2-clorobutano porque:', a:'El carbocatión plano trigonal (aquiral) es atacado por ambas caras: mezcla racémica.' },
+     { q:'Salto de hidruro 1,2:', a:'Un H migra con su par de electrones entre carbonos adyacentes hacia el C+.' },
+     { q:'Salto de alquilo 1,2:', a:'Un grupo alquilo migra con su par hacia el C+; el catión queda más estable.' },
+     { q:'Fuerza motriz de la transposición:', a:'Formar el carbocatión más estable (1° → 2° → 3°); evidencia del mecanismo iónico.' },
+     { q:'3-metil-1-buteno + HBr →', a:'2-bromo-2-metilbutano: hidruro 1,2 convierte el catión 2° en 3°.' },
+     { q:'Hidratación (H2O/H+):', a:'Alcohol Markovnikov; reversible, opuesta a la deshidratación de alcoholes.' },
+     { q:'1-metilciclopenteno + ácido diluido →', a:'1-metilciclopentanol (OH en el carbono más sustituido, catión 3°).' },
+     { q:'2-fenilpropeno + ácido diluido →', a:'2-fenil-2-propanol (catión terciario y bencílico, muy estable).' },
+     { q:'Adición de Cl2/Br2 a alquenos:', a:'Vía ion halonio cíclico; apertura anti → dihaluro vecinal.' },
+     { q:'Halógenos con utilidad práctica en adición:', a:'Cl2 y Br2 (F2 violento; los diioduros pierden I2 y regeneran el alqueno).' },
+     { q:'Etileno + Br2 en agua →', a:'2-bromoetanol (halohidrina); ciclopenteno + Cl2/H2O → 2-clorociclopentanol.' },
+     { q:'Hidrogenación catalítica:', a:'H2 con Pt (o Pd, Ni, Rh) da el alcano; reacción heterogénea; sin catalizador no ocurre.' },
+     { q:'2-metil-2-buteno + H2/Pt →', a:'2-metilbutano.' },
+     { q:'Test de Baeyer (KMnO4 diluido, frío):', a:'Hidroxilación a glicol (1,2-diol); el violeta se decolora: test de insaturación.' },
+     { q:'KMnO4 caliente o en medio ácido sobre alquenos:', a:'Ruptura oxidativa: =CR2 → cetona; =CH– → aldehído → ácido; =CH2 → CO2.' },
+     { q:'3,7-dimetil-1-octeno + KMnO4/H+ →', a:'Ácido 2,6-dimetilheptanoico (+ CO2 del =CH2 terminal).' },
+     { q:'Alquino + 2 HX →', a:'Doble adición Markovnikov: dihaluro GEMINAL (ej. propino → 2,2-dibromopropano).' },
+     { q:'Alquino + H2O/H+ →', a:'Enol (alcohol vinílico) inestable que tautomeriza a CETONA (propino → acetona).' },
+     { q:'Oxidación de alquinos:', a:'KMnO4/H+: ruptura del triple enlace → 2 ácidos carboxílicos; oxidación suave → dicetonas.' },
+     { q:'Estabilidad de carbocationes:', a:'Bencilo > alilo > 3° > 2° > 1° > metilo.' }
+    ];
+    let fcIndex=0, fcFlipped=false, fcGood=0, fcBad=0, fcDone=false;
+    function fcUpdateStats(){
+        document.getElementById('fc-good').textContent=fcGood;
+        document.getElementById('fc-bad').textContent=fcBad;
+        document.getElementById('fc-left').textContent=Math.max(0,flashcards.length-fcIndex);
+        const tg=parseInt(localStorage.getItem('fc7TotalGood')||'0',10), tb=parseInt(localStorage.getItem('fc7TotalBad')||'0',10);
+        document.getElementById('fc-hist').textContent=tg+' ✓ / '+tb+' ✗';
+        document.getElementById('fc-bar').style.width=(fcIndex/flashcards.length*100)+'%';
+    }
+    function fcRenderCard(){
+        document.getElementById('fc-card').classList.remove('flipped'); fcFlipped=false;
+        document.getElementById('fc-question').textContent=flashcards[fcIndex].q;
+        document.getElementById('fc-answer').textContent=flashcards[fcIndex].a;
+        document.getElementById('btn-fc-good').disabled=true; document.getElementById('btn-fc-bad').disabled=true;
+        fcUpdateStats();
+    }
+    function flipCard(){
+        if(fcDone) return;
+        const c=document.getElementById('fc-card'); c.classList.toggle('flipped');
+        fcFlipped=c.classList.contains('flipped');
+        document.getElementById('btn-fc-good').disabled=!fcFlipped;
+        document.getElementById('btn-fc-bad').disabled=!fcFlipped;
+    }
+    function gradeCard(ok){
+        if(!fcFlipped||fcDone) return;
+        if(ok){ fcGood++; localStorage.setItem('fc7TotalGood',String(parseInt(localStorage.getItem('fc7TotalGood')||'0',10)+1)); }
+        else { fcBad++; localStorage.setItem('fc7TotalBad',String(parseInt(localStorage.getItem('fc7TotalBad')||'0',10)+1)); }
+        fcIndex++;
+        if(fcIndex<flashcards.length) { fcRenderCard(); } else { fcFinish(); }
+    }
+    function fcFinish(){
+        fcDone=true;
+        document.getElementById('fc-scene').style.display='none';
+        document.getElementById('fc-controls').style.display='none';
+        const pct=Math.round(fcGood/(fcGood+fcBad)*100);
+        const msg=pct>=80?'🏆 ¡Excelente! Dominas el capítulo 7.':(pct>=60?'💪 ¡Bien! Repasa las que fallaste.':'📚 Repasa Conceptos, Mapa y Errores Comunes.');
+        const s=document.getElementById('fc-summary');
+        s.innerHTML='<strong>📊 Resumen:</strong> ✅ '+fcGood+' • ❌ '+fcBad+' • Precisión <strong>'+pct+'%</strong><br>'+msg;
+        s.classList.add('show'); fcUpdateStats();
+    }
+    function resetFlashcards(){
+        fcIndex=0; fcGood=0; fcBad=0; fcDone=false;
+        document.getElementById('fc-scene').style.display='block';
+        document.getElementById('fc-controls').style.display='flex';
+        document.getElementById('fc-summary').classList.remove('show');
+        fcRenderCard();
+    }
+    function borrarHistorial(){ localStorage.removeItem('fc7TotalGood'); localStorage.removeItem('fc7TotalBad'); fcUpdateStats(); }
+    
+    // ================= HERRAMIENTAS =================
+    const reaccionesData = [
+     { r:'Propeno + Br₂ → 1,2-dibromopropano', t:'HALOGENACIÓN (ADICIÓN ANTI)', x:'Ion halonio cíclico que se abre por el haluro: dihaluro vecinal con estereoquímica anti.' },
+     { r:'Propeno + HBr → 2-bromopropano', t:'ADICIÓN ELECTROFÍLICA MARKOVNIKOV', x:'El H va al carbono con más H; pasa por el carbocatión secundario más estable.' },
+     { r:'Propeno + HBr (peróxidos) → 1-bromopropano', t:'ADICIÓN ANTI-MARKOVNIKOV (KHARASCH)', x:'Mecanismo radicalario con peróxidos; exclusivo de HBr.' },
+     { r:'Propeno + H₂O/H⁺ → 2-propanol', t:'HIDRATACIÓN MARKOVNIKOV', x:'OH al carbono más sustituido; reacción reversible frente a la deshidratación.' },
+     { r:'Etileno + Br₂/H₂O → 2-bromoetanol', t:'FORMACIÓN DE HALOHIDRINA', x:'Con agua como nucleófilo entran Br y OH en carbonos vecinos (anti).' },
+     { r:'2-metil-2-buteno + H₂/Pt → 2-metilbutano', t:'HIDROGENACIÓN CATALÍTICA', x:'Reacción heterogénea en la interfase con Pt (o Pd, Ni, Rh); sin catalizador no ocurre.' },
+     { r:'Ciclohexeno + KMnO₄ frío/diluido → cis-1,2-diol', t:'HIDROXILACIÓN (TEST DE BAEYER)', x:'Permanganato diluido en frío: glicol; se decolora (prueba de insaturación).' },
+     { r:'3,7-dimetil-1-octeno + KMnO₄/H⁺ → ácido 2,6-dimetilheptanoico', t:'RUPTURA OXIDATIVA', x:'Medio ácido/caliente rompe el C=C: =CH– → ácido; =CH₂ → CO₂.' },
+     { r:'Propino + 2 HBr → 2,2-dibromopropano', t:'DOBLE ADICIÓN MARKOVNIKOV (GEMINAL)', x:'Ambas adiciones siguen la misma pauta: los dos Br en el mismo carbono.' },
+     { r:'Propino + H₂O/H⁺ → acetona', t:'HIDRATACIÓN DE ALQUINO + TAUTOMERÍA', x:'El enol (alcohol vinílico) es inestable y tautomeriza a cetona.' },
+     { r:'2-butino + KMnO₄ suave → 2,3-butanodiona', t:'OXIDACIÓN SUAVE DE ALQUINO', x:'Permanganato suave: dicetona sin romper el esqueleto.' },
+     { r:'3-metil-1-buteno + HBr → 2-bromo-2-metilbutano', t:'ADICIÓN CON TRANSPOSICIÓN', x:'Salto de hidruro 1,2: catión 2° → catión 3° más estable antes del ataque de Br⁻.' }
+    ];
+    function clasificarReaccion(){
+        const d=reaccionesData[parseInt(document.getElementById('reaccion-select').value,10)];
+        const r=document.getElementById('reaccion-resultado');
+        r.innerHTML='<strong>'+d.r+'</strong><br>Tipo de reacción: <span style="color:#e94560;font-weight:bold;">'+d.t+'</span><br>💡 '+d.x;
+        r.classList.add('show');
+    }
+    const markovData = [
+     { m:'Propeno + HBr', p:'2-bromopropano', x:'Markovnikov: H al CH₂ terminal; catión secundario más estable que el primario.' },
+     { m:'Propeno + HBr (peróxidos)', p:'1-bromopropano', x:'Kharasch: con peróxidos, solo HBr da adición anti-Markovnikov (radicalaria).' },
+     { m:'2-metilpropeno + HCl', p:'2-cloro-2-metilpropano', x:'Catión terciario: el Cl queda en el carbono más sustituido.' },
+     { m:'2-metilpropeno + H₂O/H⁺', p:'2-metil-2-propanol', x:'Hidratación Markovnikov: OH en el carbono terciario.' },
+     { m:'1-metilciclopenteno + H₂O/H⁺', p:'1-metilciclopentanol', x:'El OH queda en el carbono del doble enlace más sustituido (catión 3°).' },
+     { m:'2-fenilpropeno + H₂O/H⁺', p:'2-fenil-2-propanol', x:'Catión terciario y bencílico (resonancia con el anillo): muy estable.' },
+     { m:'1-fenilciclohexeno + H₂O/H⁺', p:'1-fenilciclohexanol', x:'Protonación que deja el + en el carbono bencílico/terciario del anillo.' },
+     { m:'3-metil-1-buteno + HBr', p:'2-bromo-2-metilbutano', x:'Catión 2° inicial → salto de hidruro 1,2 → catión 3°: producto con transposición.' },
+     { m:'1-buteno + HCl', p:'(±)-2-clorobutano (racémico)', x:'Markovnikov da 2-clorobutano; el catión plano es atacado por ambas caras: mezcla R y S.' }
+    ];
+    function predecirMarkovnikov(){
+        const d=markovData[parseInt(document.getElementById('markov-select').value,10)];
+        const r=document.getElementById('markov-resultado');
+        r.innerHTML='<strong>'+d.m+'</strong><br>Producto principal: <span style="color:#e94560;font-weight:bold;">'+d.p+'</span><br>💡 '+d.x;
+        r.classList.add('show');
+    }
+    const oxidData = [
+     { m:'Propeno + KMnO₄ diluido y frío', p:'1,2-propanodiol (glicol)', x:'Test de Baeyer: hidroxilación sin ruptura; el violeta se decolora.' },
+     { m:'Propeno + KMnO₄/H⁺ caliente', p:'Ácido acético + CO₂', x:'Ruptura: =CH– → aldehído → ácido; =CH₂ terminal → CO₂.' },
+     { m:'2-metil-2-buteno + KMnO₄/H⁺', p:'Acetona + ácido acético', x:'=CR₂ → cetona (estable); =CH– → ácido carboxílico.' },
+     { m:'3,7-dimetil-1-octeno + KMnO₄/H⁺', p:'Ácido 2,6-dimetilheptanoico (+ CO₂)', x:'Ejemplo del capítulo: ruptura oxidativa del C=C terminal.' },
+     { m:'Ciclohexeno + KMnO₄ diluido y frío', p:'cis-1,2-ciclohexanodiol', x:'Hidroxilación syn a glicol (Baeyer positivo).' },
+     { m:'2-butino + KMnO₄ suave', p:'2,3-butanodiona (dicetona)', x:'Oxidación suave del alquino: dicetona sin ruptura.' },
+     { m:'2-butino + KMnO₄/H⁺', p:'2 CH₃COOH (dos ácidos)', x:'Ruptura del triple enlace en medio ácido: dos ácidos carboxílicos.' }
+    ];
+    function analizarOxidacion(){
+        const d=oxidData[parseInt(document.getElementById('oxid-select').value,10)];
+        const r=document.getElementById('oxid-resultado');
+        r.innerHTML='<strong>'+d.m+'</strong><br>Producto(s): <span style="color:#e94560;font-weight:bold;">'+d.p+'</span><br>💡 '+d.x;
+        r.classList.add('show');
+    }
+    function renderBarras7(tipo){
+        const datos = tipo==='radicales'
+          ? [['Metilo (105)',1],['1° (98)',2],['2° (95)',3],['3° (92)',4],['Alilo',5],['Bencilo',6]]
+          : [['Metilo',1],['1°',2],['2°',3],['3°',4],['Alilo',5],['Bencilo',6]];
+        const cont=document.getElementById('est-barras');
+        const min=1, max=6;
+        let html='';
+        datos.forEach(function(d){
+            const h=Math.round((d[1]-min)/(max-min)*150)+18;
+            html+='<div class="bar-col"><div class="bar" style="height:'+h+'px;" title="'+d[0]+'"></div><div class="bar-label">'+d[0]+'</div></div>';
+        });
+        cont.innerHTML=html;
+        const m=document.getElementById('est-msg');
+        m.innerHTML = tipo==='radicales'
+          ? '📈 Barra más alta = <strong>radical más estable</strong> (Kharasch se apoya en esta escala). Números: energías de disociación C–H en kcal/mol.'
+          : '📈 Barra más alta = <strong>carbocatión más estable</strong>: bencilo &gt; alilo &gt; 3° &gt; 2° &gt; 1° &gt; metilo. Markovnikov y las transposiciones siguen esta escala.';
+        m.classList.add('show');
+    }
+    
+    // ================= QUIZ (base 30, muestra 10 al azar) =================
+    const quizBank = [
+     { question:'La nube π del doble enlace C=C es rica en electrones; por ello, la reacción más importante de los alquenos es:', options:['Sustitución nucleófila','Adición electrófila','Eliminación','Ruptura homolítica'], correct:1, explanation:'La nube π cede electrones a un atacante electrófilo: adición electrófila.' },
+     { question:'En el mecanismo de adición de HBr a un alqueno, la Etapa 1 es:', options:['Ataque del bromuro al carbocatión','Formación de un ion halonio','Protonación del doble enlace formando un carbocatión','Ruptura homolítica del H–Br'], correct:2, explanation:'Etapa 1: protonación del doble enlace → carbocatión; Etapa 2: ataque del Br⁻.' },
+     { question:'La regla de Markovnikov establece que el protón se enlaza al carbono:', options:['Menos sustituido del doble enlace (con más H)','Más sustituido del doble enlace','Que genera el carbocatión menos estable','Con menor densidad electrónica'], correct:0, explanation:'El H va al carbono menos sustituido; el electrófilo genera el carbocatión más estable.' },
+     { question:'Propeno + HBr da mayoritariamente:', options:['1-bromopropano','1,2-dibromopropano','Propano','2-bromopropano'], correct:3, explanation:'Pasa por el carbocatión secundario, más estable que el primario.' },
+     { question:'2-metilpropeno + HBr da únicamente 2-bromo-2-metilpropano porque:', options:['Se favorece el carbocatión secundario','Se favorece el carbocatión terciario, más estable','Interviene un mecanismo radicalario','La reacción es anti-Markovnikov'], correct:1, explanation:'El catión terciario es más estable: solo se observa ese producto.' },
+     { question:'Con peróxidos, HBr + propeno da:', options:['1-bromopropano (anti-Markovnikov)','2-bromopropano','Propano','1,2-dibromopropano'], correct:0, explanation:'Reacción de Kharasch: mecanismo radicalario, orientación anti-Markovnikov.' },
+     { question:'La adición anti-Markovnikov (Kharasch) se observa con:', options:['HCl y peróxidos','H2O y peróxidos','HBr y peróxidos','HI y peróxidos'], correct:2, explanation:'Es exclusiva de HBr; con HCl o HI no ocurre.' },
+     { question:'1-buteno + HCl da (±)-2-clorobutano (racémico) porque:', options:['El Cl ataca solo una cara del catión','El carbocatión plano trigonal es atacado por ambas caras','Se forma un ion cloronio cíclico','La reacción pasa por radicales'], correct:1, explanation:'El catión es aquiral y plano: ataque por ambas caras → mezcla R y S.' },
+     { question:'Un salto de hidruro (1,2) consiste en:', options:['Un H que salta como H+ sin electrones','Pérdida de H2 molecular','Un H que salta con su par de electrones entre carbonos adyacentes','Un H que salta sin electrones'], correct:2, explanation:'El hidruro (:H⁻) migra con su par desde el carbono vecino al C+.' },
+     { question:'La fuerza motriz de las transposiciones de carbocationes es:', options:['Formar el carbocatión más estable','Evitar el ataque del nucleófilo','Formar el carbocatión menos estable','Generar un radical libre'], correct:0, explanation:'El catión se reordena para quedar más estable (1° → 2° → 3°).' },
+     { question:'3-metil-1-buteno + HBr da principalmente 2-bromo-2-metilbutano debido a:', options:['Una adición anti-Markovnikov','Un ion halonio cíclico','Una eliminación previa','Una migración 1,2 de hidruro (catión 2° → 3°)'], correct:3, explanation:'El catión secundario inicial se transpone al terciario antes del ataque de Br⁻.' },
+     { question:'La hidratación de alquenos (H2O/H+):', options:['Da el alcohol anti-Markovnikov','Da un diol vecinal','Da el alcohol Markovnikov y es reversible (opuesta a la deshidratación)','Da siempre un éter'], correct:2, explanation:'OH al carbono más sustituido; el sentido depende de la cantidad de agua.' },
+     { question:'1-metilciclopenteno + ácido diluido da:', options:['2-metilciclopentanol','1-metilciclopentanol','Ciclopentanol','Óxido de 1-metilciclopenteno'], correct:1, explanation:'El OH queda en el carbono más sustituido (catión terciario).' },
+     { question:'2-fenilpropeno + ácido diluido da 2-fenil-2-propanol porque el catión intermedio es:', options:['Primario','Vinílico','Metilo','Bencílico y terciario, muy estable'], correct:3, explanation:'Resonancia con el anillo + sustitución: catión muy estable.' },
+     { question:'La adición de Cl2 o Br2 a un alqueno pasa por:', options:['Un ion halonio cíclico que se abre con estereoquímica anti','Un carbocatión libre que rota','Un radical alquílico','Un carbanión'], correct:0, explanation:'El halonio cíclico impone apertura anti: dihaluro vecinal.' },
+     { question:'Un dihaluro vecinal tiene:', options:['Dos halógenos en el mismo carbono','Halógenos separados por tres carbonos','Dos halógenos en carbonos adyacentes','Un halógeno y un OH vecinos'], correct:2, explanation:'Vecinal = carbonos adyacentes; geminal = mismo carbono.' },
+     { question:'La adición de halógenos tiene utilidad práctica con:', options:['F2 y I2','Cl2 y Br2','I2 solamente','F2 solamente'], correct:1, explanation:'F2 es violento e incontrolable; los diioduros vecinales pierden I2.' },
+     { question:'Etileno + Br2 en agua da:', options:['1,2-dibromoetano únicamente','Etanol','2-bromoetanol (halohidrina)','Ácido acético'], correct:2, explanation:'Con agua como nucleófilo se forma la halohidrina (X y OH anti).' },
+     { question:'La hidrogenación catalítica de alquenos requiere:', options:['Luz ultravioleta','Peróxidos','KMnO4','Pt, Pd, Ni o Rh finamente divididos'], correct:3, explanation:'Sin catalizador no reaccionan ni a 200 °C; reacción heterogénea.' },
+     { question:'2-metil-2-buteno + H2 (Pt) da:', options:['2-metilbutano','2-metil-2-butanol','Pentano','2-metil-1-buteno'], correct:0, explanation:'Hidrogenación: el alcano correspondiente, alto rendimiento.' },
+     { question:'El test de Baeyer (KMnO4 diluido y frío) convierte al alqueno en:', options:['Dos ácidos carboxílicos','Un glicol (1,2-diol)','Una cetona','Un dihaluro'], correct:1, explanation:'Hidroxilación a diol; el permanganato se decolora (test de insaturación).' },
+     { question:'Con KMnO4 caliente o en medio ácido, el alqueno sufre:', options:['Hidroxilación a glicol','Hidrogenación','Ruptura oxidativa dando cetonas y aldehídos/ácidos','Halogenación'], correct:2, explanation:'=CR2 → cetona; =CH– → aldehído → ácido; =CH2 → CO2.' },
+     { question:'3,7-dimetil-1-octeno con KMnO4/H+ da:', options:['2,6-dimetilheptan-1-ol','Ácido octanoico','Acetona','Ácido 2,6-dimetilheptanoico (+ CO2)'], correct:3, explanation:'Ruptura oxidativa: el =CH2 terminal se pierde como CO2.' },
+     { question:'Alquino + 2 HX da:', options:['Dihaluro vecinal','Alqueno halogenado','Dihaluro geminal (doble adición Markovnikov)','Dicetona'], correct:2, explanation:'Ambas adiciones siguen Markovnikov: los dos X en el mismo carbono.' },
+     { question:'En un dihaluro geminal los dos halógenos están:', options:['En carbonos adyacentes','En los extremos de la cadena','Uno en sp2 y otro en sp3','En el mismo carbono'], correct:3, explanation:'Geminal = mismo carbono (ej. 2,2-dibromopropano).' },
+     { question:'Alquino + H2O (H+) forma un enol que:', options:['Se tautomeriza a cetona','Se aísla como producto final','Se oxida a ácido','Vuelve al alquino'], correct:0, explanation:'El enol es inestable: tautomería ceto-enólica, la cetona es el producto.' },
+     { question:'La oxidación de alquinos con KMnO4 en medio ácido da:', options:['Un glicol','Dos ácidos carboxílicos (ruptura del triple enlace)','Una dicetona siempre','Un enol'], correct:1, explanation:'El triple enlace se rompe: dos ácidos carboxílicos.' },
+     { question:'La oxidación SUAVE de un alquino con permanganato da:', options:['Dicetonas','Dos ácidos carboxílicos','CO2 y agua','Un diol vecinal'], correct:0, explanation:'Suave = sin ruptura: dicetona.' },
+     { question:'El orden de estabilidad de carbocationes es:', options:['Metilo > 1° > 2° > 3° > alilo > bencilo','3° > bencilo > alilo > 2° > 1°','Bencilo > alilo > 3° > 2° > 1° > metilo','2° > 3° > 1° > metilo'], correct:2, explanation:'Resonancia (bencilo/alilo) y efecto inductivo dador de los alquilos.' },
+     { question:'Los diioduros vecinales tienden a:', options:['Ser muy estables','Perder I2 y regenerar el alqueno','Polimerizar espontáneamente','Convertirse en gem-diioduros'], correct:1, explanation:'Por eso la adición de I2 no tiene utilidad práctica.' }
+    ];
+    let quizSet=[], qIdx=0, qScore=0, qAnswered=false, cycleDone=false, quizLastSet=[];
+    
+    function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); const t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+    function overlapCount(sel, old){ const s=new Set(old.map(q=>q.question)); return sel.filter(q=>s.has(q.question)).length; }
+    
+    function startNewCycle(){
+        let sel, tries=0;
+        do { sel=shuffle(quizBank.slice()).slice(0,10); tries++; }
+        while (quizLastSet.length && overlapCount(sel, quizLastSet) > 4 && tries < 30); // garantiza ≥6 preguntas nuevas
+        quizLastSet=sel;
+        quizSet=sel;
+        qIdx=0; qScore=0; qAnswered=false; cycleDone=false;
+        document.getElementById('quiz-result').style.display='none';
+        document.getElementById('quiz-result').classList.remove('show');
+        renderQuestion(); updateQuizHistory();
+    }
+    function renderQuestion(){
+        const q=quizSet[qIdx];
+        document.getElementById('q-progress-text').textContent='Pregunta '+(qIdx+1)+' de 10 • Aciertos: '+qScore;
+        document.getElementById('q-bar').style.width=(qIdx/10*100)+'%';
+        let html='<div class="quiz-container"><div class="quiz-question">'+(qIdx+1)+'. '+q.question+'</div><div class="quiz-options">';
+        q.options.forEach(function(o,i){ html+='<button class="quiz-option" onclick="checkQuiz('+i+', this)">'+o+'</button>'; });
+        html+='</div><div id="quiz-feedback" style="display:none;margin-top:1rem;padding:1rem;border-radius:8px;color:#2c3e50;"></div>';
+        html+='<div style="text-align:center;margin-top:1.2rem;"><button id="btn-next" class="calc-button" style="display:none;" onclick="nextQuestion()">'+(qIdx===9?'📊 Ver resultados':'➡️ Siguiente pregunta')+'</button></div></div>';
+        document.getElementById('quiz-container').innerHTML=html;
+        qAnswered=false;
+    }
+    function checkQuiz(i,btn){
+        if(qAnswered) return; qAnswered=true;
+        const q=quizSet[qIdx];
+        const opts=btn.parentElement.querySelectorAll('.quiz-option');
+        opts.forEach(function(o){ o.disabled=true; });
+        const fb=document.getElementById('quiz-feedback');
+        if(i===q.correct){ btn.classList.add('correct'); qScore++;
+            fb.innerHTML='<span style="color:#2e7d32;font-weight:bold;">✅ ¡Correcto!</span><br>'+q.explanation;
+            fb.style.background='#e8f5e9';
+        } else { btn.classList.add('incorrect'); opts[q.correct].classList.add('correct');
+            fb.innerHTML='<span style="color:#c62828;font-weight:bold;">❌ Incorrecto.</span><br>'+q.explanation;
+            fb.style.background='#ffebee';
+        }
+        fb.style.display='block';
+        document.getElementById('q-progress-text').textContent='Pregunta '+(qIdx+1)+' de 10 • Aciertos: '+qScore;
+        document.getElementById('btn-next').style.display='inline-block';
+    }
+    function nextQuestion(){ if(qIdx<9){ qIdx++; renderQuestion(); } else { finishCycle(); } }
+    function finishCycle(){
+        cycleDone=true;
+        document.getElementById('q-bar').style.width='100%';
+        document.getElementById('quiz-container').innerHTML='';
+        const pct=Math.round(qScore*10);
+        let cycles=parseInt(localStorage.getItem('q7_cycles')||'0',10)+1;
+        const best=Math.max(parseInt(localStorage.getItem('q7_best')||'0',10),pct);
+        const totC=parseInt(localStorage.getItem('q7_totC')||'0',10)+qScore;
+        const totQ=parseInt(localStorage.getItem('q7_totQ')||'0',10)+10;
+        localStorage.setItem('q7_cycles',String(cycles)); localStorage.setItem('q7_best',String(best));
+        localStorage.setItem('q7_totC',String(totC)); localStorage.setItem('q7_totQ',String(totQ));
+        const msg=pct>=80?'🏆 ¡Excelente! Dominas el Capítulo 7.':(pct>=60?'💪 ¡Bien! Repasa los temas fallados en Conceptos y Errores Comunes.':'📚 Necesitas repasar: usa Mapa, Flashcards y Aplicaciones antes del próximo ciclo.');
+        const r=document.getElementById('quiz-result');
+        r.innerHTML='<strong>📊 Resultados del ciclo:</strong> '+qScore+'/10 correctas • <strong style="color:#e94560;">'+pct+'%</strong><br>'+msg+'<br><br>🔄 Pulsa “Reiniciar Quiz” o vuelve a entrar al Quiz para un <strong>nuevo ciclo con preguntas aleatorias</strong>.';
+        r.style.display='block'; r.classList.add('show');
+        document.getElementById('q-progress-text').textContent='Ciclo completado • Aciertos: '+qScore+'/10';
+        updateQuizHistory();
+    }
+    function updateQuizHistory(){
+        const cycles=parseInt(localStorage.getItem('q7_cycles')||'0',10);
+        const best=parseInt(localStorage.getItem('q7_best')||'0',10);
+        const totC=parseInt(localStorage.getItem('q7_totC')||'0',10);
+        const totQ=parseInt(localStorage.getItem('q7_totQ')||'0',10);
+        document.getElementById('q-history').innerHTML='📈 Ciclos: <strong>'+cycles+'</strong> | Mejor: <strong>'+best+'%</strong> | Promedio histórico: <strong>'+(totQ?Math.round(totC/totQ*100):0)+'%</strong>';
+    }
+    
+    // ================= INICIALIZACIÓN =================
+    document.addEventListener('DOMContentLoaded', function(){
+        startNewCycle();   // 10 preguntas al azar al cargar la página
+        fcRenderCard();
+        renderBarras7('carbocationes');
+    });
 
-// ================= INICIALIZACIÓN =================
-document.addEventListener('DOMContentLoaded', function(){
-    startNewCycle();   // 10 preguntas al azar al cargar la página
-    fcRenderCard();
-    renderBarras7('carbocationes');
-});
+     // ============================================================
+        //  AMPLIAR IMÁGENES AL HACER CLIC
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Selecciona todas las imágenes que están dentro de contenedores .img-container
+            // y también las que tengan clase 'molecule-img' (por si están fuera)
+            const imagenes = document.querySelectorAll('.img-container img, .molecule-img');
+            imagenes.forEach(img => {
+                // Cambia el cursor para indicar que es clickeable
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    // Abre la imagen en una nueva pestaña/ventana
+                    window.open(this.src, '_blank');
+                });
+            });
+        });
 </script>
 </body>
 </html>
